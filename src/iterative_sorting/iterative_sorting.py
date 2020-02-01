@@ -29,14 +29,15 @@ def selection_sort( arr ):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-const length = arr.length;
-    for(let i=0; i < length; i++)
-                for j in arr:
-                    if(arr[j]> arr[j+1]){
-                        ##swap numbers
-                        let temp = arr[j];
-                        arr[j] = arr[j+1];
-                        arr[j+1]=temp
+    swap_flag = True
+    while swap_flag is True:
+        swap_flag = False
+        for j in arr:
+            if arr[j]> arr[j+1]:
+                ##swap numbers
+                temp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1]=temp
 
     return arr
 
